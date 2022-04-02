@@ -7,8 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A86672FF27F6D6B400B7788E /* ASTCEncoderLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A86672FE27F6D6B400B7788E /* ASTCEncoderLibrary.m */; };
-		A866730027F6D6B400B7788E /* ASTCEncoderLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A86672FD27F6D6B400B7788E /* ASTCEncoderLibrary.h */; };
+		A866733F27F6D70E00B7788E /* astcenc_pick_best_endpoint_format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866730727F6D70E00B7788E /* astcenc_pick_best_endpoint_format.cpp */; };
+		A866734027F6D70E00B7788E /* astcenc_integer_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866730927F6D70E00B7788E /* astcenc_integer_sequence.cpp */; };
+		A866734127F6D70E00B7788E /* astcenc_compute_variance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866730B27F6D70E00B7788E /* astcenc_compute_variance.cpp */; };
+		A866734227F6D70F00B7788E /* astcenc_quantization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866730C27F6D70E00B7788E /* astcenc_quantization.cpp */; };
+		A866734627F6D70F00B7788E /* astcenc_color_unquantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866731327F6D70E00B7788E /* astcenc_color_unquantize.cpp */; };
+		A866734827F6D70F00B7788E /* astcenc_mathlib_softfloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866731527F6D70E00B7788E /* astcenc_mathlib_softfloat.cpp */; };
+		A866734927F6D70F00B7788E /* astcenc_weight_quant_xfer_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866731727F6D70E00B7788E /* astcenc_weight_quant_xfer_tables.cpp */; };
+		A866734A27F6D70F00B7788E /* astcenc_percentile_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866731A27F6D70E00B7788E /* astcenc_percentile_tables.cpp */; };
+		A866734B27F6D70F00B7788E /* astcenc_partition_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866731B27F6D70E00B7788E /* astcenc_partition_tables.cpp */; };
+		A866734C27F6D70F00B7788E /* astcenc_decompress_symbolic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866731C27F6D70E00B7788E /* astcenc_decompress_symbolic.cpp */; };
+		A866734E27F6D70F00B7788E /* astcenc_color_quantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866731E27F6D70E00B7788E /* astcenc_color_quantize.cpp */; };
+		A866734F27F6D70F00B7788E /* astcenc_platform_isa_detection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866732027F6D70E00B7788E /* astcenc_platform_isa_detection.cpp */; };
+		A866735027F6D70F00B7788E /* astcenc_block_sizes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866732227F6D70E00B7788E /* astcenc_block_sizes.cpp */; };
+		A866735127F6D70F00B7788E /* astcenc_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866732327F6D70E00B7788E /* astcenc_image.cpp */; };
+		A866735227F6D70F00B7788E /* astcenc_compress_symbolic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866732627F6D70E00B7788E /* astcenc_compress_symbolic.cpp */; };
+		A866735327F6D70F00B7788E /* astcenc_ideal_endpoints_and_weights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866732727F6D70E00B7788E /* astcenc_ideal_endpoints_and_weights.cpp */; };
+		A866735727F6D70F00B7788E /* astcenc_mathlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866732D27F6D70E00B7788E /* astcenc_mathlib.cpp */; };
+		A866735927F6D70F00B7788E /* astcenc_find_best_partitioning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866733027F6D70E00B7788E /* astcenc_find_best_partitioning.cpp */; };
+		A866735A27F6D70F00B7788E /* astcenc_diagnostic_trace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866733227F6D70E00B7788E /* astcenc_diagnostic_trace.cpp */; };
+		A866735B27F6D70F00B7788E /* astcenc_symbolic_physical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866733327F6D70E00B7788E /* astcenc_symbolic_physical.cpp */; };
+		A866735C27F6D70F00B7788E /* astcenc_weight_align.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866733527F6D70E00B7788E /* astcenc_weight_align.cpp */; };
+		A866735E27F6D70F00B7788E /* astcenc_entry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866733B27F6D70E00B7788E /* astcenc_entry.cpp */; };
+		A866735F27F6D70F00B7788E /* astcenc_averages_and_directions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A866733D27F6D70E00B7788E /* astcenc_averages_and_directions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +39,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A866730027F6D6B400B7788E /* ASTCEncoderLibrary.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +46,42 @@
 
 /* Begin PBXFileReference section */
 		A86672FA27F6D6B400B7788E /* libASTCEncoderLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASTCEncoderLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A86672FD27F6D6B400B7788E /* ASTCEncoderLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTCEncoderLibrary.h; sourceTree = "<group>"; };
-		A86672FE27F6D6B400B7788E /* ASTCEncoderLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTCEncoderLibrary.m; sourceTree = "<group>"; };
+		A866730727F6D70E00B7788E /* astcenc_pick_best_endpoint_format.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_pick_best_endpoint_format.cpp; sourceTree = "<group>"; };
+		A866730827F6D70E00B7788E /* astcenc_diagnostic_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_diagnostic_trace.h; sourceTree = "<group>"; };
+		A866730927F6D70E00B7788E /* astcenc_integer_sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_integer_sequence.cpp; sourceTree = "<group>"; };
+		A866730A27F6D70E00B7788E /* astcenc_vecmathlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_vecmathlib.h; sourceTree = "<group>"; };
+		A866730B27F6D70E00B7788E /* astcenc_compute_variance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_compute_variance.cpp; sourceTree = "<group>"; };
+		A866730C27F6D70E00B7788E /* astcenc_quantization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_quantization.cpp; sourceTree = "<group>"; };
+		A866731327F6D70E00B7788E /* astcenc_color_unquantize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_color_unquantize.cpp; sourceTree = "<group>"; };
+		A866731527F6D70E00B7788E /* astcenc_mathlib_softfloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_mathlib_softfloat.cpp; sourceTree = "<group>"; };
+		A866731727F6D70E00B7788E /* astcenc_weight_quant_xfer_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_weight_quant_xfer_tables.cpp; sourceTree = "<group>"; };
+		A866731927F6D70E00B7788E /* astcenc_vecmathlib_avx2_8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_vecmathlib_avx2_8.h; sourceTree = "<group>"; };
+		A866731A27F6D70E00B7788E /* astcenc_percentile_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_percentile_tables.cpp; sourceTree = "<group>"; };
+		A866731B27F6D70E00B7788E /* astcenc_partition_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_partition_tables.cpp; sourceTree = "<group>"; };
+		A866731C27F6D70E00B7788E /* astcenc_decompress_symbolic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_decompress_symbolic.cpp; sourceTree = "<group>"; };
+		A866731E27F6D70E00B7788E /* astcenc_color_quantize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_color_quantize.cpp; sourceTree = "<group>"; };
+		A866731F27F6D70E00B7788E /* astcenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc.h; sourceTree = "<group>"; };
+		A866732027F6D70E00B7788E /* astcenc_platform_isa_detection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_platform_isa_detection.cpp; sourceTree = "<group>"; };
+		A866732127F6D70E00B7788E /* astcenccli_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenccli_internal.h; sourceTree = "<group>"; };
+		A866732227F6D70E00B7788E /* astcenc_block_sizes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_block_sizes.cpp; sourceTree = "<group>"; };
+		A866732327F6D70E00B7788E /* astcenc_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_image.cpp; sourceTree = "<group>"; };
+		A866732527F6D70E00B7788E /* astcenc_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_internal.h; sourceTree = "<group>"; };
+		A866732627F6D70E00B7788E /* astcenc_compress_symbolic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_compress_symbolic.cpp; sourceTree = "<group>"; };
+		A866732727F6D70E00B7788E /* astcenc_ideal_endpoints_and_weights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_ideal_endpoints_and_weights.cpp; sourceTree = "<group>"; };
+		A866732B27F6D70E00B7788E /* astcenc_vecmathlib_sse_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_vecmathlib_sse_4.h; sourceTree = "<group>"; };
+		A866732D27F6D70E00B7788E /* astcenc_mathlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_mathlib.cpp; sourceTree = "<group>"; };
+		A866733027F6D70E00B7788E /* astcenc_find_best_partitioning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_find_best_partitioning.cpp; sourceTree = "<group>"; };
+		A866733127F6D70E00B7788E /* astcenc_vecmathlib_neon_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_vecmathlib_neon_4.h; sourceTree = "<group>"; };
+		A866733227F6D70E00B7788E /* astcenc_diagnostic_trace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_diagnostic_trace.cpp; sourceTree = "<group>"; };
+		A866733327F6D70E00B7788E /* astcenc_symbolic_physical.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_symbolic_physical.cpp; sourceTree = "<group>"; };
+		A866733427F6D70E00B7788E /* tinyexr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyexr.h; sourceTree = "<group>"; };
+		A866733527F6D70E00B7788E /* astcenc_weight_align.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_weight_align.cpp; sourceTree = "<group>"; };
+		A866733627F6D70E00B7788E /* astcenccli_version.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = astcenccli_version.h.in; sourceTree = "<group>"; };
+		A866733A27F6D70E00B7788E /* astcenc_vecmathlib_none_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_vecmathlib_none_4.h; sourceTree = "<group>"; };
+		A866733B27F6D70E00B7788E /* astcenc_entry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_entry.cpp; sourceTree = "<group>"; };
+		A866733C27F6D70E00B7788E /* astcenc_vecmathlib_common_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_vecmathlib_common_4.h; sourceTree = "<group>"; };
+		A866733D27F6D70E00B7788E /* astcenc_averages_and_directions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_averages_and_directions.cpp; sourceTree = "<group>"; };
+		A866733E27F6D70E00B7788E /* astcenc_mathlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astcenc_mathlib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +98,7 @@
 		A86672F127F6D6B400B7788E = {
 			isa = PBXGroup;
 			children = (
-				A86672FC27F6D6B400B7788E /* ASTCEncoderLibrary */,
+				A866730627F6D70E00B7788E /* Source */,
 				A86672FB27F6D6B400B7788E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,13 +111,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A86672FC27F6D6B400B7788E /* ASTCEncoderLibrary */ = {
+		A866730627F6D70E00B7788E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A86672FD27F6D6B400B7788E /* ASTCEncoderLibrary.h */,
-				A86672FE27F6D6B400B7788E /* ASTCEncoderLibrary.m */,
+				A866730727F6D70E00B7788E /* astcenc_pick_best_endpoint_format.cpp */,
+				A866730827F6D70E00B7788E /* astcenc_diagnostic_trace.h */,
+				A866730927F6D70E00B7788E /* astcenc_integer_sequence.cpp */,
+				A866730A27F6D70E00B7788E /* astcenc_vecmathlib.h */,
+				A866730B27F6D70E00B7788E /* astcenc_compute_variance.cpp */,
+				A866730C27F6D70E00B7788E /* astcenc_quantization.cpp */,
+				A866731327F6D70E00B7788E /* astcenc_color_unquantize.cpp */,
+				A866731527F6D70E00B7788E /* astcenc_mathlib_softfloat.cpp */,
+				A866731727F6D70E00B7788E /* astcenc_weight_quant_xfer_tables.cpp */,
+				A866731927F6D70E00B7788E /* astcenc_vecmathlib_avx2_8.h */,
+				A866731A27F6D70E00B7788E /* astcenc_percentile_tables.cpp */,
+				A866731B27F6D70E00B7788E /* astcenc_partition_tables.cpp */,
+				A866731C27F6D70E00B7788E /* astcenc_decompress_symbolic.cpp */,
+				A866731E27F6D70E00B7788E /* astcenc_color_quantize.cpp */,
+				A866731F27F6D70E00B7788E /* astcenc.h */,
+				A866732027F6D70E00B7788E /* astcenc_platform_isa_detection.cpp */,
+				A866732127F6D70E00B7788E /* astcenccli_internal.h */,
+				A866732227F6D70E00B7788E /* astcenc_block_sizes.cpp */,
+				A866732327F6D70E00B7788E /* astcenc_image.cpp */,
+				A866732527F6D70E00B7788E /* astcenc_internal.h */,
+				A866732627F6D70E00B7788E /* astcenc_compress_symbolic.cpp */,
+				A866732727F6D70E00B7788E /* astcenc_ideal_endpoints_and_weights.cpp */,
+				A866732B27F6D70E00B7788E /* astcenc_vecmathlib_sse_4.h */,
+				A866732D27F6D70E00B7788E /* astcenc_mathlib.cpp */,
+				A866733027F6D70E00B7788E /* astcenc_find_best_partitioning.cpp */,
+				A866733127F6D70E00B7788E /* astcenc_vecmathlib_neon_4.h */,
+				A866733227F6D70E00B7788E /* astcenc_diagnostic_trace.cpp */,
+				A866733327F6D70E00B7788E /* astcenc_symbolic_physical.cpp */,
+				A866733427F6D70E00B7788E /* tinyexr.h */,
+				A866733527F6D70E00B7788E /* astcenc_weight_align.cpp */,
+				A866733627F6D70E00B7788E /* astcenccli_version.h.in */,
+				A866733A27F6D70E00B7788E /* astcenc_vecmathlib_none_4.h */,
+				A866733B27F6D70E00B7788E /* astcenc_entry.cpp */,
+				A866733C27F6D70E00B7788E /* astcenc_vecmathlib_common_4.h */,
+				A866733D27F6D70E00B7788E /* astcenc_averages_and_directions.cpp */,
+				A866733E27F6D70E00B7788E /* astcenc_mathlib.h */,
 			);
-			path = ASTCEncoderLibrary;
+			name = Source;
+			path = ASTCEncoderLibrary/Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +212,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86672FF27F6D6B400B7788E /* ASTCEncoderLibrary.m in Sources */,
+				A866735127F6D70F00B7788E /* astcenc_image.cpp in Sources */,
+				A866734227F6D70F00B7788E /* astcenc_quantization.cpp in Sources */,
+				A866735F27F6D70F00B7788E /* astcenc_averages_and_directions.cpp in Sources */,
+				A866735A27F6D70F00B7788E /* astcenc_diagnostic_trace.cpp in Sources */,
+				A866734827F6D70F00B7788E /* astcenc_mathlib_softfloat.cpp in Sources */,
+				A866734F27F6D70F00B7788E /* astcenc_platform_isa_detection.cpp in Sources */,
+				A866735B27F6D70F00B7788E /* astcenc_symbolic_physical.cpp in Sources */,
+				A866735727F6D70F00B7788E /* astcenc_mathlib.cpp in Sources */,
+				A866734C27F6D70F00B7788E /* astcenc_decompress_symbolic.cpp in Sources */,
+				A866735C27F6D70F00B7788E /* astcenc_weight_align.cpp in Sources */,
+				A866733F27F6D70E00B7788E /* astcenc_pick_best_endpoint_format.cpp in Sources */,
+				A866734127F6D70E00B7788E /* astcenc_compute_variance.cpp in Sources */,
+				A866735027F6D70F00B7788E /* astcenc_block_sizes.cpp in Sources */,
+				A866734A27F6D70F00B7788E /* astcenc_percentile_tables.cpp in Sources */,
+				A866735327F6D70F00B7788E /* astcenc_ideal_endpoints_and_weights.cpp in Sources */,
+				A866735E27F6D70F00B7788E /* astcenc_entry.cpp in Sources */,
+				A866734E27F6D70F00B7788E /* astcenc_color_quantize.cpp in Sources */,
+				A866734927F6D70F00B7788E /* astcenc_weight_quant_xfer_tables.cpp in Sources */,
+				A866735927F6D70F00B7788E /* astcenc_find_best_partitioning.cpp in Sources */,
+				A866735227F6D70F00B7788E /* astcenc_compress_symbolic.cpp in Sources */,
+				A866734027F6D70E00B7788E /* astcenc_integer_sequence.cpp in Sources */,
+				A866734B27F6D70F00B7788E /* astcenc_partition_tables.cpp in Sources */,
+				A866734627F6D70F00B7788E /* astcenc_color_unquantize.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +356,9 @@
 		A866730427F6D6B400B7788E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -256,7 +369,9 @@
 		A866730527F6D6B400B7788E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
